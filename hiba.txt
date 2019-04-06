@@ -1,0 +1,194 @@
+Arduino: 1.8.9 (Windows 10), Alaplap:"ATtiny13, ATtiny13a, No (ISP Programmer Upload), 9.6MHz Internal Oscillator, Millis Available, No Tone, Better Or Equal 1.666% Error (Default), Bin, Hex, Dec Supported, Half Duplex, Read+Write, LTO Enabled, 2.7v, Default, Default"
+
+In file included from c:\users\cicomk\appdata\local\arduino15\packages\arduino\tools\avr-gcc\5.4.0-atmel3.6.1-arduino2\avr\include\avr\io.h:99:0,
+
+                 from c:\users\cicomk\appdata\local\arduino15\packages\arduino\tools\avr-gcc\5.4.0-atmel3.6.1-arduino2\avr\include\avr\pgmspace.h:90,
+
+                 from C:\Users\cicomk\AppData\Local\Arduino15\packages\diy_attiny\hardware\avr\2018.9.9\cores\tiny/Arduino.h:9,
+
+                 from C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremoteInt.h:24,
+
+                 from C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremote.cpp:22:
+
+C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremote.cpp: In member function 'void IRsend::mark(int)':
+
+C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremote.cpp:182:16: error: 'COM1B1' was not declared in this scope
+
+   GTCCR |= _BV(COM1B1); // Enable pin 3 PWM output (PB4 - Arduino D4)
+
+                ^
+
+C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremote.cpp: In member function 'void IRsend::space(int)':
+
+C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremote.cpp:190:18: error: 'COM1B1' was not declared in this scope
+
+   GTCCR &= ~(_BV(COM1B1)); // Disable pin 3 PWM output (PB4 - Arduino D4)
+
+                  ^
+
+C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremote.cpp: In member function 'void IRsend::enableIROut(int)':
+
+C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremote.cpp:208:3: error: 'TIMSK' was not declared in this scope
+
+   TIMSK &= ~_BV(TOIE1); //Timer1 Overflow Interrupt
+
+   ^
+
+In file included from c:\users\cicomk\appdata\local\arduino15\packages\arduino\tools\avr-gcc\5.4.0-atmel3.6.1-arduino2\avr\include\avr\io.h:99:0,
+
+                 from c:\users\cicomk\appdata\local\arduino15\packages\arduino\tools\avr-gcc\5.4.0-atmel3.6.1-arduino2\avr\include\avr\pgmspace.h:90,
+
+                 from C:\Users\cicomk\AppData\Local\Arduino15\packages\diy_attiny\hardware\avr\2018.9.9\cores\tiny/Arduino.h:9,
+
+                 from C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremoteInt.h:24,
+
+                 from C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremote.cpp:22:
+
+C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremote.cpp:208:17: error: 'TOIE1' was not declared in this scope
+
+   TIMSK &= ~_BV(TOIE1); //Timer1 Overflow Interrupt
+
+                 ^
+
+C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremote.cpp:217:3: error: 'TCCR1' was not declared in this scope
+
+   TCCR1 = _BV(CTC1) | _BV(CS10);
+
+   ^
+
+In file included from c:\users\cicomk\appdata\local\arduino15\packages\arduino\tools\avr-gcc\5.4.0-atmel3.6.1-arduino2\avr\include\avr\io.h:99:0,
+
+                 from c:\users\cicomk\appdata\local\arduino15\packages\arduino\tools\avr-gcc\5.4.0-atmel3.6.1-arduino2\avr\include\avr\pgmspace.h:90,
+
+                 from C:\Users\cicomk\AppData\Local\Arduino15\packages\diy_attiny\hardware\avr\2018.9.9\cores\tiny/Arduino.h:9,
+
+                 from C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremoteInt.h:24,
+
+                 from C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremote.cpp:22:
+
+C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremote.cpp:217:15: error: 'CTC1' was not declared in this scope
+
+   TCCR1 = _BV(CTC1) | _BV(CS10);
+
+               ^
+
+C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremote.cpp:217:27: error: 'CS10' was not declared in this scope
+
+   TCCR1 = _BV(CTC1) | _BV(CS10);
+
+                           ^
+
+C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremote.cpp:220:15: error: 'PWM1B' was not declared in this scope
+
+   GTCCR = _BV(PWM1B);
+
+               ^
+
+C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremote.cpp:223:3: error: 'OCR1C' was not declared in this scope
+
+   OCR1C = SYSCLOCK / khz / 1000;
+
+   ^
+
+C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremote.cpp:224:3: error: 'OCR1B' was not declared in this scope
+
+   OCR1B = OCR1C / 3; // 33% duty cycle
+
+   ^
+
+C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremote.cpp: In member function 'void IRrecv::enableIRIn()':
+
+C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremote.cpp:241:3: error: 'TCCR1' was not declared in this scope
+
+   TCCR1 = _BV(CS11) | _BV(CS10);
+
+   ^
+
+In file included from c:\users\cicomk\appdata\local\arduino15\packages\arduino\tools\avr-gcc\5.4.0-atmel3.6.1-arduino2\avr\include\avr\io.h:99:0,
+
+                 from c:\users\cicomk\appdata\local\arduino15\packages\arduino\tools\avr-gcc\5.4.0-atmel3.6.1-arduino2\avr\include\avr\pgmspace.h:90,
+
+                 from C:\Users\cicomk\AppData\Local\Arduino15\packages\diy_attiny\hardware\avr\2018.9.9\cores\tiny/Arduino.h:9,
+
+                 from C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremoteInt.h:24,
+
+                 from C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremote.cpp:22:
+
+C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremote.cpp:241:15: error: 'CS11' was not declared in this scope
+
+   TCCR1 = _BV(CS11) | _BV(CS10);
+
+               ^
+
+C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremote.cpp:241:27: error: 'CS10' was not declared in this scope
+
+   TCCR1 = _BV(CS11) | _BV(CS10);
+
+                           ^
+
+C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremote.cpp:244:3: error: 'TIMSK' was not declared in this scope
+
+   TIMSK |= _BV(TOIE1);
+
+   ^
+
+In file included from c:\users\cicomk\appdata\local\arduino15\packages\arduino\tools\avr-gcc\5.4.0-atmel3.6.1-arduino2\avr\include\avr\io.h:99:0,
+
+                 from c:\users\cicomk\appdata\local\arduino15\packages\arduino\tools\avr-gcc\5.4.0-atmel3.6.1-arduino2\avr\include\avr\pgmspace.h:90,
+
+                 from C:\Users\cicomk\AppData\Local\Arduino15\packages\diy_attiny\hardware\avr\2018.9.9\cores\tiny/Arduino.h:9,
+
+                 from C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremoteInt.h:24,
+
+                 from C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremote.cpp:22:
+
+C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremote.cpp:244:16: error: 'TOIE1' was not declared in this scope
+
+   TIMSK |= _BV(TOIE1);
+
+                ^
+
+In file included from C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremote.cpp:22:0:
+
+C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremoteInt.h:52:22: error: 'TCNT1' was not declared in this scope
+
+ #define RESET_TIMER1 TCNT1 = INIT_TIMER_COUNT1
+
+                      ^
+
+C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremote.cpp:249:3: note: in expansion of macro 'RESET_TIMER1'
+
+   RESET_TIMER1;
+
+   ^
+
+In file included from C:\Users\cicomk\AppData\Local\Arduino15\packages\diy_attiny\hardware\avr\2018.9.9\cores\tiny/Arduino.h:11:0,
+
+                 from C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremoteInt.h:24,
+
+                 from C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremote.cpp:22:
+
+C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremote.cpp: In function 'void TIM1_OVF_vect()':
+
+C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremote.cpp:271:5: warning: 'TIM1_OVF_vect' appears to be a misspelled signal handler, missing __vector prefix [-Wmisspelled-isr]
+
+ ISR(TIM1_OVF_vect)
+
+     ^
+
+In file included from C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremote.cpp:22:0:
+
+C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremoteInt.h:52:22: error: 'TCNT1' was not declared in this scope
+
+ #define RESET_TIMER1 TCNT1 = INIT_TIMER_COUNT1
+
+                      ^
+
+C:\Users\cicomk\Documents\Arduino\libraries\attinyir\tiny_IRremote.cpp:273:3: note: in expansion of macro 'RESET_TIMER1'
+
+   RESET_TIMER1;
+
+   ^
+
+exit status 1
+Hiba a(z) ATtiny13 alaplapra fordításra.
